@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Wedding's guests bus route plan</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1,h2,h3 {
+            color: #333;
+        }
+        .project {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .visualization{
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        </style>
+</head>
+<body>
+
+<div id="header">
+    <div id="nav">
+        <ul>
+            <li> <a href = "Index.html"> Home </a> </li>
+        </ul>
+    </div>
+</div>
+
+    <div class="section">
+        <h1> Wedding's guests bus route plan </h1>
+    </div>
+
+    <div class="project">
+
+        <h2> Context </h2>
+        <p> To transport wedding guests at the end of the event from the wedding venue to different locations in hotels and airbnbs, the bride's parents has hired you to programme a route to trasnport the guests from the wedding venue to their accommodations in Belfast . 
+
+        <h2> Project </h2>
+        <p>
+        The task is to find an optimal route to transports all guests from the wedding venue to their different accomodations in Belfast. There is a budget restriction of only hiring one bus.
+        </p>
+
+        <p>
+        To help with the logistics in the wedding day, guest shared the geo-location of the place where they will be staying in advance to help to plan a route that will transport at the place they were staying.
+        The guests are staying mainly in around Belfast city centre (11 guests) and suroundings (11 guests) and a few numbers of guests staying in the eghes of the city as it can be seen in the map below.
+        </p>
+
+       <div id="feature">
+            <p> <img src="images/Accommodations.png" alt = "Accommodation", width = "1000" height = "500" align = "top" />
+            </p>
+        </div>
+
+
+        <h2> Techniques </h2>
+        <p>
+        This is a case of Vehicule Routing Problem (VPR) where the constrains is the capacity of the bus which is 30 passengers. The trasnport will depart from the wedding venue at the end of the event and will not return to the wedding venue.
+
+        </p>
+
+
+
+
+
+    <h2> Results & Impact </h2>
+    <p>
+    The capacity was fully used to transport guests at the end of the event to their accomodations in Belfast. One challenge was that when using ox.distance.nearest_nodes function the route created initially contained isolated locations. This occured as the function attemps to find the closest street network node to a given latitude and logintude and when the points are too far from the drivable network create "disconnected" poins. The pottential solution taken were to move those points to the closest street network node. The final route is shown below.  
+    </p>
+
+       <div id="feature">
+            <p> <img src="images/ReturnBusRoute.png" alt = "ReturnBusRoute", width = "1000" height = "500" align = "top" />
+            </p>
+        </div>
+
+    <p> If there were not a budget constrain, it would be interesting to compare the option of hiring two mini-buses and identify the best option using as a optimisation criteron time or bus utilised capacity. </p>
+
+
+    </div>
+
+</body>
+</html>

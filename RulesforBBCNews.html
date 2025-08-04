@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Classifying BBC news using NLP</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1,h2,h3 {
+            color: #333;
+        }
+        .project {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .visualization{
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        </style>
+</head>
+<body>
+
+<div id="header">
+    <div id="nav">
+        <ul>
+            <li> <a href = "Index.html"> Home </a> </li>
+        </ul>
+    </div>
+</div>
+
+    <div class="section">
+        <h1> Classifying BBC news into subcategories
+            using NLP
+        </h1>
+    </div>
+
+    <div class="project">
+
+        <h2> Context </h2>
+        <p> 
+        The BBC news is a well-known source of news
+        that covers a wide range of topics, including
+        politics, business, technology, science, health,
+        entertainment, and sports. The news articles
+        are written in a formal and objective style,
+        and they are intended to inform the public
+        about current events and issues. The BBC news
+        articles are published on the BBC website and
+        are available to the public for free. The
+        articles are written by professional journalists
+        and are edited by editors to ensure accuracy. 
+        </p>
+
+        <h2> Project </h2>
+        <p>
+         A BBC dataset is available from UCD
+        (http://mig.ucd.ie/datasets/bbc.html).
+        The goal is to use the full dataset and classify
+        each existing category into sub-categories:
+        - Breakdown "Buisness" into stock maket, company
+        news, mergers and acquisitions etc.
+        - Breakdown "Entertainment" into movies, music, 
+        literature, personality etc.
+        - Breakdown "Sports" into the type of sport:
+        cricket, football, Olympics etc.
+        </p>
+
+        <h2> Techniques </h2>
+        <p>
+        The techniques used in this project include
+        text processing & ingestion, Kewword extraction,
+        topic modelling with Latent Dirichlet 
+        Allocation (LDA), subcategory classification via 
+        and keyword matching.
+        </p>
+
+
+
+
+
+
+        <h2>Results & Impact </h2>
+        <p>
+        Documents are automatically loaded, labelled,
+        and subcatgorized high-level (e.g., business)
+        into fine-grained subcategories (e.g., stock 
+        market, company news, mergers and acquisitions).
+        The method <code> get_subcategories_files() </code> 
+        method returns a structured DataFrame linking
+        filenames to predicted subcategories.
+
+        The figure below shows the 
+        subcategorization of the 500 BBC news file 
+        with top-level category Business. It is possible
+        to see that the most common subcategory is stock 
+        market (134), followed by company news (118),
+        economy (100), and banking finance (68).
+         </p>
+
+    
+       <div id="feature">
+            <p> <img src="images/SucategoryCounts.png" alt = "World Heat Map", width = "1000" height = "500" align = "top" />
+            </p>
+        </div>
+
+
+        The impact of this project is that it
+        automates the process of classifying BBC news
+        articles into subcategories, which can help
+        to improve the accuracy and efficiency of news
+        classification. This can help to improve the
+        user experience by making it easier for users
+        to find news articles that are relevant to their
+        interests. Additionally, this project can help
+        researchers to quickly organize and analyze large
+        volumes of news data, which can lead to new
+        insights and discoveries in the field of news
+        analysis and journalism.
+
+        
+        Using Latent Dirichlet Allocation (LDA) and 
+        TF-IDF allow to provide thematically relevant
+        summary and keyword discovery. Another advantage
+        is that this apporach is easy to implement and
+        expand with other subcategories or languages in 
+        the future. 
+
+        Possible extensions and improvements to this project 
+        include: using more advanced NLP techniques such as
+        advanced named entity recognition (NER), 
+        deep learning, expanding the dataset to include
+        more news articles from different sources, and
+        improving the accuracy of the subcategory
+        classification by using more advanced machine
+        learning algorithms. Additionally, including 
+        some evaluation metrics to measure the
+        performance of the subcategory classification
+        would be beneficial. This could include metrics
+        such as precision, recall, and F1-score to
+        evaluate the accuracy of the subcategory
+        classification. Finally, it would be useful to
+        include some visualizations to help understand 
+        the results of the subcategory classification,
+        such as bar charts or word clouds to show the
+        most common subcategories and keywords in the
+        news articles.
+           
+
+
+    </div>
+    
+    <p>
+ 
+    </p>
+</body>
+</html>
