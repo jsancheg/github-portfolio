@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html> 
+<html lang = "en"> 
     <head>
-        <title> Porffolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portofolio of Jorge Sánchez – PhD Statistician & Data Scientist">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title> "Portofolio of Jorge Sánchez – PhD Statistician & Data Scientist" </title>
         <style type="text/css">
             body{
+                font-family: Arial, sans-serif;
                 width: 960px;
                 margin: 0 auto;
-                font-family: Arial, sans-serif;
+                padding: 0;
+                max-width: 960px;
+                background-color: #f9f9f9;
+                color: #333;
             }
             #content{
                 overflow: auto;
                 height: 100%;
             }
-            #nav, #feature, #footer{
+            #nav{
+                list-style:none;
+                padding: 0;
+            }
+            #feature, #footer{
                 background-color: #ffffff;
                 padding: 10px;
                 margin: 10px;
             }
 
-            li {
+            #nav li {
                 display: inline;
                 padding: 5px;
             }
@@ -47,8 +58,12 @@
                 gap: 5px;
             }
 
+            #intro .profile-headline {
+                font-weight: bold;
+                font-family: Arial, sans-serif;
+            }
+
             #intro .profile-keywords {
-                font-style: italic;
                 font-weight: normal;
                 font-family: Verdana, sans-serif
             }
@@ -100,81 +115,83 @@
 
                 <!-- left image with name and a job title-->
                 <div id="profile-img">
-                    <img src="images/ProfilePic.jpeg" alt="Picture", width="200" height="200" style="object-fit: cover;"/>
+                    <img src="images/ProfilePic.jpeg" alt="Picture", width="250" height="250" style="object-fit: cover;"/>
                     <h2> Jorge Sánchez</h2>
- <!--                   <h3> Data Scientist </h3> -->
                 </div>
 
                 <!-- right: Intro Parragraphs-->
 
                 <div id="intro">
-
-                    <p class = "profile-keywords">
-                         Data Science | Data Analyst | Machine Learning | 
-                         AI | LLM | Statistical Learning | <br> 
-                         Actuarial Sciences | Bayesian Modelling | NLP | Analytics | Pricing | Forecasting | <br>
-                         Logistics and Optimisation <br>
-                      <!--   Demand planning | Time Series Analysis |
-                         Predictive Modelling |
-                         Classification | Clustering |
-                         Regression |
-                         Data Mining |
-                         Data Cleaning | Data Wrangling |
-                         Recomendation Systems |
-                         Forecasting | Data Visualisation 
-                         -->
+                    <p class ="profile-headline">
+                            PhD Statistician & Senior Data Scientist | Advanced Analytics & Machine Learning for Policy, Health, Finance, and Operations 
                     </p>
-                    <p class="profile-summary">
-                        Althought I cannot provided full code of projects
-                        I have worked on because of confidentiality agreements, 
-                        I can provide simpler examples using public data 
-                        highlighting some of the techniques used 
-                        in projects I have worked on.  A description of some real 
-                        projects I have worked on is provided in my resume.
-                        Please, feel free to contact me if you would like to know more about my work.    
 
+                    <ul>
+                        <li><strong>Statistical Modelling:</strong> Generalised Linear Models, Bayesian Methods, 
+                            Spatial Statistics, Casual Inference, Survival Analysis, Longitudinal Data Analysis, 
+                            Non-Parametric Methods, Mixed-Effects Models </li> <br>
+                        <li><strong>AI & Machine Learning:</strong> NLP, Supervised Learning Methods, 
+                            Unsupervised Learning Methods, Ensemble Methods, Dimensionality Reduction,
+                            Model Optimization, Feature Engineering, Deep Neural Networks,
+                            Convolutional Neural Networks </li> <br>
+                        <li><strong>Industry Applications:</strong> 
+                            <ul class="industry-applications">
+                                <li><strong>Public Sector:</strong> Population health management, casual inference, data-driven policy</li>
+                                <li><strong>Financial & Insurance:</strong> Credit risk, pricing, fraud detection, telematics</li>
+                                <li><strong>Healthcare:</strong> Biostatistics, outcomes modelling, health inequalities</li>
+                                <li><strong>Supply Chain:</strong> Forecasting, route optimization, demand simulation</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p class="profile-summary">
+                            I am a Data Science professional with a PhD in Statistics and 
+                            15+ years of experience applying advanced analytical and 
+                            machine learning methods to improve decision-making in government, 
+                            healthcare, banking, insurance, and logistics sectors. 
+                            My work bridges statistical modelling and operational impact — 
+                            from designing fair insurance pricing models to supporting 
+                            population health policy decisions.
                     </p>
                 </div>
         
             </div>
 
 
-              <div class="three-columns">
+            <div class="three-columns">
                 <div class="column">
                     <h3> <a href="RulesforBBCNews.html"> 
-                        Using NLP 
-                        for classifying 
-                        BBC news </a> </h3>>
+                        Analytical Modelling for Policy and Research 
+                         </a> 
+                    </h3>>
                     <img 
                     src="images/wordcloud_bbcnews.jpg" 
-                    alt = "TextMining" />
+                    alt = "Analytical Modelling for Policy and Research" />
 
                 </div>
+               <div class="column">
+                    <h3> <a href="NoAA.html">
+                        Healthcare, Environmental, and Climate 
+                    </a> 
+                    </h3>>
+                        <img src="images/weekly_avg_temp.png" 
+                        alt=" Global temperature" />
+                </div>
                 
-            <div class="column">
-                <h3> <a href="Route.html"> 
-                    Wedding's guests bus route 
-                    plan </a> </h3>
-                    <img src="images/route.png" 
-                    alt="route planning" /> 
+                <div class="column">
+                    <h3> <a href="Route.html"> 
+                            Operational Research & Supply Chain
+                         </a> 
+                    </h3>
+                        <img src="images/SupplyChain.jpeg" 
+                        alt="Operational Research and Supply Chain Projects" /> 
                 
+                </div>
+
             </div>
-
-            <div class="column">
-                <h3> <a href="NoAA.html">
-                    How hot was the world on 
-                    14-Jul-2025 </a> </h3>>
-                <img src="images/weekly_avg_temp.png" 
-                alt=" Global temperature" />
-            </div>
-
-
-
-
-        </div>
         
         <div id="footer">
-            <p>&copy: Copyright 2011</p>
+            <p>&copy: Copyright 2025</p>
              </div>
 
     </body>
